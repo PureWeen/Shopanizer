@@ -9,6 +9,7 @@ namespace Shopanizer
     {
         public App()
         {
+            Device.SetFlags(new[] { "Shell_Experimental", "CollectionView_Experimental", "Visual_Experimental" });
             InitializeComponent();
 
             MainPage = new MainPage();

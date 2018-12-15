@@ -1,7 +1,23 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:local="clr-namespace:Shopanizer" x:Class="Shopanizer.MainPage">
-    <StackLayout>
-        <!-- Place new controls here -->
-        <Label Text="Welcome to Xamarin.Forms!" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" />
-    </StackLayout>
-</ContentPage>
+<?xml version="1.0" encoding="utf-8"?>
+<Shell 
+    xmlns="http://xamarin.com/schemas/2014/forms" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+    xmlns:local="clr-namespace:Shopanizer" 
+    x:Class="Shopanizer.MainPage"
+    Route="shopanizer"
+    RouteHost="xamarin.com"
+    RouteScheme="app"
+    Visual="Material">
+   <ShellItem Title="Home">
+        <ShellSection Title="Section">
+            <ShellContent Route="home" Title="Store items">
+                <local:StoreItems/>
+            </ShellContent>
+        </ShellSection>
+        <ShellSection Title="Section2">
+            <ShellContent Route="add" Title="Add Items">
+                <local:AddStoreItem/>
+            </ShellContent>
+        </ShellSection>
+    </ShellItem>
+</Shell>

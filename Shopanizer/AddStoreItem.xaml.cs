@@ -1,15 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+
 using Xamarin.Forms;
 
 namespace Shopanizer
 {
-    public partial class MainPage : Shell
+    public partial class AddStoreItem : ContentPage
     {
-        public MainPage()
+        public AddStoreItem()
         {
             InitializeComponent();
         }

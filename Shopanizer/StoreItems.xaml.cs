@@ -1,17 +1,16 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+
 using Xamarin.Forms;
 
 namespace Shopanizer
 {
-    public partial class MainPage : Shell
+    public partial class StoreItems : ContentPage
     {
-        public MainPage()
+        public StoreItems()
         {
             InitializeComponent();
+            cvStoreItems.ItemsSource = new[] { "Item1", "Item2" };
         }
     }
 }
